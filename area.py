@@ -1,7 +1,10 @@
 height = input("Enter height in m ===> ")
 width = input("Enter width in m===> ")
-area = int(height) * int(width)
-print("Area ===>" , area, "meters")
+try:
+    area = int(height) * int(width)
+    print("Area ===>" , area, "meters")
+except ValueError:
+    print("Please enter number only")
 
 #in linux scripts
 #echo -n "Enter height in m ===> "
